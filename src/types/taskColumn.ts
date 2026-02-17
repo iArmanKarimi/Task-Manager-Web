@@ -1,7 +1,7 @@
-import { type status } from './task';
+import { type Status } from './task';
 
-type TaskColumn = {
+export type TaskColumn = {
 	id: string,
-	status: status,
+	status: Status,
 	taskIds: string[], // ordered list of task IDs
 }

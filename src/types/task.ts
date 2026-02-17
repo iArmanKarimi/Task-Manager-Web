@@ -1,13 +1,13 @@
-export type status = 'pending' | 'in-progress' | 'completed';
+export type Status = 'pending' | 'in-progress' | 'completed';
 
 export type Task = {
 	id: string,
 	title: string,
 	description?: string,
-	status: status,
+	status: Status,
 	priority: 'low' | 'medium' | 'high',
 	tags?: string[],
-	dueDate?: Date,
-	createdAt: Date,
-	updatedAt: Date,
+	dueDate?: string, // ISO date string
+	createdAt: string,
+	updatedAt: string,
 }
